@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv-container {
+    width: 40vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form > input {
+    width: 30vw;
+    font-size: 1.9rem;
+}
+
+.date-input, .wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.title > input {
+    font-size: 2rem;
+}
+
+.cv-container {
+    background-color: lightgray;
+}
