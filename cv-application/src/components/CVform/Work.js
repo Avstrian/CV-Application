@@ -6,19 +6,21 @@ class Work extends Component {
     }
 
     render() {
+        const { position, workplace, start, end, present } = this.props.attributes;
+
         return (
             <div className='form-container'>
                 <h1 className='title'>Work experience</h1>
 
                 <form method='' action=''>
-                    <input type="text" name='position' id='position' placeholder='Your position...'></input>
-                    <input name='workplace' id='workplace' placeholder='Your workplace...'></input>
+                    <input defaultValue={position} type="text" name='position' id='position' placeholder='Your position...'></input>
+                    <input defaultValue={workplace} name='workplace' id='workplace' placeholder='Your workplace...'></input>
                     <div className='date-input'>
-                    <input type="date" name='start' id='start'></input>
+                    <input defaultValue={start} type="date" name='start' id='start'></input>
                     <span>-</span>
-                    <input type="date" name='end' id='end'></input>
+                    <input defaultValue={end} type="date" name='end' id='end'></input>
                     <label htmlFor='present'>Present</label>
-                    <input type="checkbox" name="present" id='present'></input>
+                    <input defaultValue={present} type="checkbox" name="present" id='present'></input>
                     </div>
                 </form>
             </div>

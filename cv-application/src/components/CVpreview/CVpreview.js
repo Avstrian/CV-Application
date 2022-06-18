@@ -11,11 +11,13 @@ class CVpreview extends Component {
     }
 
     render() {
+        const { attributes } = this.props;
+
         return (
             <div className='container preview-container'>
-                <Header />
-                <Content />
-                <Sidebar />
+                <Header name={attributes.name} userDescription={attributes.userDescription}/>
+                <Content attributes={attributes}/>
+                <Sidebar number={attributes.number} email={attributes.email} adress={attributes.adress} github={attributes.github}/>
             </div>
         )
     }

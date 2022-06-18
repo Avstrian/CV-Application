@@ -8,8 +8,8 @@ class Header extends Component {
     render() {
         return (
             <div className='header'>
-                <h1 className='names'>{this.props.username}</h1>
-                <div>My random description asduhsaodhsad</div>
+                <h1 className='names'>{this.props.name}</h1>
+                <div>{this.props.userDescription}</div>
             </div>
         )
     }

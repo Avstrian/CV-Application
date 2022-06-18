@@ -11,9 +11,9 @@ class Content extends Component {
         return (
             <div className='content'>
                 <h1>Education</h1>
-                <EducationItem />
+                <EducationItem attributes={this.props.attributes}/>
                 <h1>Experience</h1>
-                <WorkItem />
+                <WorkItem attributes={this.props.attributes}/>
             </div>
         )
     }

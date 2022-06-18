@@ -6,23 +6,26 @@ class EducationItem extends Component {
     }
 
     render() {
+
+        const { attributes } = this.props;
+
         return (
             <div className='education'>
                 <div className='container'>
                     <span className='line'></span>
                     <div className='preview-wrapper'>
                     <div>
-                        Professional Hoodlum
+                        {attributes.degree}
                     </div>
                     <div>
-                        At University
+                    {attributes.university}
                     </div>
                     </div>
                     <div>
-                        9/11/2021 - Present
+                    {attributes.uniStart} - {attributes.uniPresent ? 'Present' : attributes.uniEnd}
                     </div>
                     <div>
-                        Average grade: 7.22
+                        Average grade: {attributes.average}
                     </div>
                 </div>
             </div>

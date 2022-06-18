@@ -6,20 +6,23 @@ class WorkItem extends Component {
     }
 
     render() {
+
+        const { attributes } = this.props;
+
         return (
             <div className='work'>
                 <div className='container'>
                     <span className='line'></span>
                     <div className='preview-wrapper'>
                         <div>
-                            Professional Hoodlum
+                            {attributes.position}
                         </div>
                         <div>
-                            At Job
+                            {attributes.workplace}
                         </div>
                     </div>
                     <div>
-                        9/11/2021 - Present
+                        {attributes.start} - {attributes.present ? 'Present' : attributes.end}
                     </div>
                 </div>
             </div>
