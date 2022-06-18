@@ -10,7 +10,8 @@ class General extends Component {
 
         return (
             <div className="form-container">
-                <h1 className="title"><input type='text' name="name" id="name" placeholder="Enter your names..." defaultValue={name}></input></h1>
+                <h1>Fill out the form to create your CV</h1>
+                <input type='text' name="name" id="name" placeholder="Enter your names..." defaultValue={name}></input>
 
                 <form>
                     <input name="user-info" id="userDescription" placeholder="Describe yourself..." defaultValue={userDescription}></input>

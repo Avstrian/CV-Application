@@ -10,22 +10,26 @@ class EducationItem extends Component {
         const { attributes } = this.props;
 
         return (
-            <div className='education'>
+            <div className='content'>
                 <div className='container'>
                     <span className='line'></span>
-                    <div className='preview-wrapper'>
-                    <div>
-                        {attributes.degree}
-                    </div>
-                    <div>
-                    {attributes.university}
-                    </div>
-                    </div>
-                    <div>
-                    {attributes.uniStart} - {attributes.uniPresent ? 'Present' : attributes.uniEnd}
-                    </div>
-                    <div>
-                        Average grade: {attributes.average}
+                    <div className='preview'>
+                        <div className='preview-wrapper'>
+                            <h2>
+                                {attributes.degree}
+                            </h2>
+                            <h3>
+                                {attributes.university}
+                            </h3>
+                        </div>
+                        <div className='preview-wrapper'>
+                            <div>
+                                {attributes.uniStart} - {attributes.uniPresent ? 'Present' : attributes.uniEnd}
+                            </div>
+                            <div>
+                                Average grade: {attributes.average}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

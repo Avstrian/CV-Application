@@ -1,9 +1,13 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: center;
     padding: 2rem;
+    gap: 1.5rem;
+}
+
+div {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .main-container {
@@ -13,12 +17,16 @@
 
 .cv-container {
     width: 40vw;
+    text-align: center;
+    box-shadow: 0px 0px 3px 2px gray;
+    background-color: lightgray;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
 
 form > input {
@@ -31,10 +39,8 @@ form > input {
     gap: 10px;
 }
 
-.title > input {
+#name {
     font-size: 2rem;
-}
-
-.cv-container {
-    background-color: lightgray;
+    width: 30vw;
+    margin-bottom: 15px;
 }
